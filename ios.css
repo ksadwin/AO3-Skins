@@ -1,10 +1,14 @@
-﻿#workskin .phone {
+﻿/* START: STANDARD MOBILE SKIN STUFF - you shouldn't need to mess with this */
+
+/* the window that holds the phone, this will be your "screen". put a div with this class around the whole textymajig. if it looks too wide or too narrow, you can adjust the max-width */
+#workskin .phone {
   max-width: 350px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: table;
   margin: auto;
 }
 
+/* top of "screen" (shows the person's name). make sure to adjust the min-width if you adjust the max width above! */
 #workskin .header {
   min-width: 350px;
   background-color: #f6f6f6;
@@ -20,6 +24,7 @@
   display: table;
 }
 
+/* the part of the "screen" with the messages in it. make sure to adjust the min-width if you adjust the max width above! */
 #workskin .messagebody {
   max-width: 350px;
   background-color: #FFFFFF;
@@ -28,6 +33,7 @@
   padding-right: .5em;
 }
 
+/* a received (grey) text */
 #workskin .text {
   float: left;
   color: #000000;
@@ -39,7 +45,6 @@
   clear: both;
   position: relative;
 }
-
 #workskin .text::after {
   content: "";
   position: absolute;
@@ -51,6 +56,7 @@
   border-bottom-right-radius: 1em 0.5em;
 }
 
+/* a sent iOS message (blue) */
 #workskin .breply {
   float: right;
   color: #FFFFFF;
@@ -62,7 +68,6 @@
   clear: both;
   position: relative;
 }
-
 #workskin .breply::after {
   content: "";
   position: absolute;
@@ -73,22 +78,12 @@
   border-left: 0.5em solid #1289fe;
   border-bottom-left-radius: 1em 0.5em;
 }
+/* END: NORMAL MOBILE SKIN STUFF */
+/* what the fuck I don't have green texts. that's fuckin bullshit of me if I do say so myself. all you'd have to do is copy the blocks for the iOS message and replace the background property color with the hex color of that weird green, then give the class (the name after the period) a new name. */
 
-#workskin .image-junpe {
-  float: left;
-  margin: 0 0 0.5em;
-  border-radius: 1em;
-  width: 50%;
-  min-height: 75%;
-  clear: both;
-  position: relative;
-  background-image: url("http://orig10.deviantart.net/f11f/f/2017/217/9/a/junpe_by_asplodedkeruri-dbizrbq.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-  padding-top: 50%;
-}
+/* START: IMAGES - these are some images i inserted as texted embed shit. there's the float: left and float: right versions depending on who's sending it. you can also use the generic audio waveform if you also want to do a cute thing where someone leaves the other an audio message! you're welcome that's hosted on my website. >:) */
 
+/* left image (received) */
 #workskin .image-incorrigible {
   float: left;
   margin: 0 0 0.5em;
@@ -103,7 +98,66 @@
   display: inline-block;
   padding-top: 50%;
 }
+ /* right image (sent) */
+#workskin .image-V42 {
+  float: right;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  width: 50%;
+  min-height: 75%;
+  clear: both;
+  position: relative;
+  background-image: url("https://i.imgur.com/DtZSvDZ.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  padding-top: 50%;
+}
 
+/* audio image (if you want it received instead of sent, change the float: direction) */
+#workskin .audio-text {
+  float: left;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  width: 50%;
+  min-height: 75%;
+  clear: both;
+  position: relative;
+  background-image: url("http://ksadwin.com/img/host/audiotextgray.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 10%;
+}
+
+/* END: IMAGES */
+
+
+/* START: COOL FUN NOEL ADDITIONS */
+
+/* a sent non-iOS message (those are green, right. i haven't had an iPhone since 2016) */
+#workskin .greply {
+  float: right;
+  color: #FFFFFF;
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #00ce47;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+#workskin .greply::after {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-left: 0.5em solid #00ce47;
+  border-bottom-left-radius: 1em 0.5em;
+}
+
+/* wrap a timestamp in this class to get the timestamp font (like "Today 3:15 PM") */
 #workskin .time {
   min-width: 345px;
   color: #7B7C80;
@@ -117,6 +171,7 @@
   display: table;
 }
 
+/* if you have a group text and people's names show up above their text, wrap the name (or nickname heheheh) in this class */
 #workskin .name {
   min-width: 330px;
   color: #7B7C80;
@@ -128,6 +183,7 @@
   display: table;
 }
 
+/* same but this time it's if you want the sender to be nicknamed */
 #workskin .name-right {
   min-width: 330px;
   color: #7B7C80;
@@ -137,40 +193,4 @@
   margin-bottom: -.5em;
   text-align: right;
   display: table;
-}
-
-#workskin .poop-emoji:after {
-  content: "\1F4A9";
-}
-
-#workskin .smile-emoji:after {
-  content: "\1F60A";
-}
-
-#workskin .santa-emoji:after {
-  content: "\1F385";
-}
-
-#workskin .x-emoji:after {
-  content: "\274C";
-}
-
-#workskin .knife-emoji:after {
-  content: "\1F52A";
-}
-
-#workskin .phone-emoji:after {
-  content: "\1F933";
-}
-
-#workskin .rbubble-emoji:after {
-  content: "\1F4AC";
-}
-
-#workskin .lbubble-emoji:after {
-  content: "\1F5E8";
-}
-
-#workskin .heartpurple-emoji:after {
-  content: "\1F49C";
 }
