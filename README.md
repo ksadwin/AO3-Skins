@@ -8,4 +8,4 @@ Copy the text of ios.css into your custom workskin. Review HowToText.html to see
 
 ## Discord Skin
 
-Coming eventually.
+Copy the text of discord.css into your custom workskin. For your own avatars, you'll need to create custom classes where denoted. Review dndheist12_sampler.html to see how to use the workskin in your work. Good luck though lol.
