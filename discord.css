@@ -1,0 +1,221 @@
+/* update 9/24/2022: well here we are again gamers. this is my discord skin. the setup is a bitch. scroll down to the part where you can start adding your characters' profile pictures */
+
+#workskin .discord {
+  height: 500px;
+  width: 100%;
+}
+
+#workskin .discord-channels {
+  width: 20%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #7A7D82;
+  background-color: #2F3136;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#workskin .discord-body {
+  max-width: 60%;
+  min-width: 150px;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #C3C3C3;
+  background-color: #36393E;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: inline-block;
+}
+
+#workskin .discord-users {
+  width: 20%;
+  height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #7A7D82;
+  background-color: #2F3136;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#workskin .discord-channels p {
+  margin: .5em 5%;
+  font-weight: bold;
+}
+
+#workskin .discord-channels .active {
+  margin: .3em 2%;
+  padding: .2em 3%;
+  width: 90%;
+  color: #FFFFFF;
+  background-color: #42464D;
+  border-radius: .2em;
+}
+
+#workskin .discord-body .left {
+  float: left;
+  width: 10%;
+  min-width: 60px;
+}
+
+#workskin .discord-body .right {
+  float: left;
+  width: 80%;
+  min-width: 150px;
+  padding: 1px 15px;
+}
+
+#workskin .discord-body .handle {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+#workskin .discord-body .timestamp {
+  color: #5E6165;
+  font-size: .8em;
+}
+
+#workskin .discord-body .tag {
+  color: #7888D6;
+  font-weight: bold;
+}
+
+#workskin .discord-body p {
+  margin: .5em 0;
+  display: block;
+}
+
+#workskin .discord-body hr {
+  color: #3E4146;
+  height: 0px;
+  width: 100%;
+  margin: 0;
+}
+
+#workskin .discord-users p {
+  margin: 0 10px;
+}
+
+#workskin .discord-users .online {
+  color: #AAABAD;
+  font-weight: 600;
+}
+
+#workskin .discord-users .offline {
+  color: #AAABAD;
+  font-weight: 300;
+}
+
+#workskin .discord-users .status {
+  color: #7D7E6E;
+  font-size: .8em;
+  margin-top: 1em;
+}
+
+#workskin .discord-users .active {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+  margin-right: .5em;
+  border-radius: 50%;
+  background-color: #67B581;
+  float: left;
+}
+
+#workskin .discord-users .idle {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+  margin-right: .5em;
+  border-radius: 50%;
+  background-color: #FAA61A;
+  float: left;
+}
+
+#workskin .discord-users .disturb {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+  margin-right: .5em;
+  border-radius: 50%;
+  background-color: #F04747;
+  float: left;
+}
+
+#workskin .discord-users .invisible {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+  margin-right: .5em;
+  border-radius: 50%;
+  background-color: #747F8D;
+  float: left;
+}
+
+
+/* ADD AVATARS HERE */
+#workskin .junpei-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/sigmaprofile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+#workskin .sigma-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/knifecatjunpei.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+#workskin .dm-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/nobody.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+#workskin .carlos-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/wrongcarlos.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+#workskin .aoi-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/badsanta.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+#workskin .light-avatar {
+  width: 50px;
+  height: 50px;
+  margin-left: 25%;
+  border-radius: 50%;
+  background-image: url("http://ksadwin.com/img/host/snakenoeyes.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
